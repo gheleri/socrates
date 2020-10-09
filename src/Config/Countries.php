@@ -304,6 +304,11 @@ class Countries
          */
         'CA' => \Reducktion\Socrates\Core\NorthAmerica\Canada\CanadaIdValidator::class,
         'US' => \Reducktion\Socrates\Core\NorthAmerica\UnitedStates\UnitedStatesIdValidator::class,
+
+        /**
+         * Validators for african countries.
+         */
+        'ZA' => \Reducktion\Socrates\Core\Africa\SouthAfrica\SouthAfricaIdValidator::class,
     ];
 
     public static $extractors = [
@@ -338,5 +343,10 @@ class Countries
         'SK' => \Reducktion\Socrates\Core\Europe\Slovakia\SlovakiaCitizenInformationExtractor::class,
         'UA' => \Reducktion\Socrates\Core\Europe\Ukraine\UkraineCitizenInformationExtractor::class,
         'XK' => \Reducktion\Socrates\Core\Europe\Kosovo\KosovoCitizenInformationExtractor::class,
+
+        /**
+         * Extractors for african countries.
+         */
+        'ZA' => \Reducktion\Socrates\Core\Africa\SouthAfrica\SouthAfricaCitizenInformationExtractor::class,
     ];
 }
